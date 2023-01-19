@@ -6,14 +6,14 @@ terraform {
   }
 
    backend "gcs" {
-    bucket  = "barberoterraform"
+    bucket  = "desyncterraform"
     prefix  = "terraform/state"
   }
   
 }
 
 provider "google" {
-  project = "barbero-devops-iac"
+  project = "desync-shared-devops-prod-iac"
   region  = "us-central1"
   zone    = "us-central1-c"
 }
