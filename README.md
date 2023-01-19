@@ -154,20 +154,24 @@ Após isso vamos iniciar nossa instancia do terraform para que o código seja ex
     
 ![Screenshot_27](https://user-images.githubusercontent.com/32373902/213400794-24bc3afe-6768-4475-864c-350d9bc651c0.png)    
     
-    O bucket, agora apresenta o arquivo de estados do terraform:
-    
+
+
+O bucket, agora apresenta o arquivo de estados do terraform:  
 ![Screenshot_25](https://user-images.githubusercontent.com/32373902/213400792-6a9a1f24-b1b2-49e2-bd1a-545e9ffc4dbf.png)
+
 
 
 ## Testando o trigger do CI-CD:
 
 Será necessário uma modificação de um arquivo e a realização de um `push` ao nosso repositório para aplicação dos **Triggers.**
 
-- Vamos trocar o nome de nossa **Vm instance** no arquivo `[main.tf](http://main.tf)` de **************************************terraform-instance************************************** para **cloudbbuildterraform.**
+- Vamos trocar o nome de nossa **Vm instance** no arquivo `main.tf` de **************************************terraform-instance************************************** para **cloudbbuildterraform.**
 - Faremos a alteração utilizando o Cloud Shell Editor;
 ![Screenshot_29](https://user-images.githubusercontent.com/32373902/213400800-b5533f25-2039-4bd6-851b-dd116e969328.png)
-- Realizamos o ******************`git add.`**  o `git commit` e o `git push --all google` para envio ao repositório.
+
+- Realizamos o `git add.`  o `git commit` e o `git push --all google` para envio ao repositório.
 ![Screenshot_30](https://user-images.githubusercontent.com/32373902/213400803-e57fbde2-46de-4b9e-88ba-de5eec1f0258.png)
+
 - Assim que push é percebido pela trigger, ele começará o processo de construção da nossa infraestrutura
 ![Screenshot_32](https://user-images.githubusercontent.com/32373902/213400809-c4c51054-8adc-4fa5-9ba8-edecdf575d4c.png)
 
