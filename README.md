@@ -175,3 +175,8 @@ Será necessário uma modificação de um arquivo e a realização de um `push` 
     
    ![Screenshot_31](https://user-images.githubusercontent.com/32373902/213400805-f13834a1-8044-49e4-aa0e-022831988f79.png)
     
+
+
+Assim, atingimos todos os objetivos do desafio!
+
+ - Lembre-se, é possível que erros aconteçam no Cloud Build por necessidade de permissões do IAM
